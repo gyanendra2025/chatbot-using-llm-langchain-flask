@@ -79,3 +79,4 @@ See `IMPLEMENTATION_SUMMARY.md` for detailed cloud architecture notes. The proje
 
 
 URI: 845087561044.dkr.ecr.eu-north-1.amazonaws.com/medical-bot
+845087561044.dkr.ecr.us-east-1.amazonaws.com/medical-chatbot

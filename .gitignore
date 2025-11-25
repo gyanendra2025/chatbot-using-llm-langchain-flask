@@ -14,4 +14,4 @@ history/
 # Python virtual environment
 venv/
 env/
-ENV/
+ENV/.env

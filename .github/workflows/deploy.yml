@@ -1,68 +1,68 @@
- name: Deploy Application Docker Image to EC2 instance
+  name: Deploy Application Docker Image to EC2 instance
 
-on:
-  push:
-    branches: [main]
+  on:
+    push:
+      branches: [main]
 
-env:
-  IMAGE_TAG: latest
+  env:
+    IMAGE_TAG: latest
 
-jobs:
+  jobs:
 
-  Continuous-Integration:
-    runs-on: ubuntu-latest
+    Continuous-Integration:
+      runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
+      steps:
+        - uses: actions/checkout@v2
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v1
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: us-east-1
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        - name: Login to Amazon ECR
+          id: login-ecr
+          uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Build and Push Image
-        env:
-          REGISTRY: 845087561044.dkr.ecr.us-east-1.amazonaws.com
-          REPO: medical-chatbot
-        run: |
-          aws ecr describe-repositories --repository-names $REPO || \
-            aws ecr create-repository --repository-name $REPO
+        - name: Build and Push Image
+          env:
+            REGISTRY: 845087561044.dkr.ecr.us-east-1.amazonaws.com
+            REPO: medical-chatbot
+          run: |
+            aws ecr describe-repositories --repository-names $REPO || \
+              aws ecr create-repository --repository-name $REPO
 
-          docker build -t $REGISTRY/$REPO:latest .
-          docker push $REGISTRY/$REPO:latest
+            docker build -t $REGISTRY/$REPO:latest .
+            docker push $REGISTRY/$REPO:latest
 
 
-  Continuous-Deployment:
-    needs: Continuous-Integration
-    runs-on: self-hosted
+    Continuous-Deployment:
+      needs: Continuous-Integration
+      runs-on: self-hosted
 
-    steps:
-      - name: Login to ECR
-        run: |
-          aws ecr get-login-password --region us-east-1 | \
-            docker login --username AWS --password-stdin 845087561044.dkr.ecr.us-east-1.amazonaws.com
+      steps:
+        - name: Login to ECR
+          run: |
+            aws ecr get-login-password --region us-east-1 | \
+              docker login --username AWS --password-stdin 845087561044.dkr.ecr.us-east-1.amazonaws.com
 
-      - name: Deploy updated container
-        run: |
-          REGISTRY="845087561044.dkr.ecr.us-east-1.amazonaws.com"
-          REPO="medical-chatbot"
+        - name: Deploy updated container
+          run: |
+            REGISTRY="845087561044.dkr.ecr.us-east-1.amazonaws.com"
+            REPO="medical-chatbot"
 
-          docker stop medical-chatbot || true
-          docker rm medical-chatbot || true
+            docker stop medical-chatbot || true
+            docker rm medical-chatbot || true
 
-          docker pull $REGISTRY/$REPO:latest
+            docker pull $REGISTRY/$REPO:latest
 
-          docker run -d \
-            --name medical-chatbot \
-            -p 8080:8080 \
-            -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
-            -e PINECONE_API_KEY="${{ secrets.PINECONE_API_KEY }}" \
-            $REGISTRY/$REPO:latest
+            docker run -d \
+              --name medical-chatbot \
+              -p 8080:8080 \
+              -e OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
+              -e PINECONE_API_KEY="${{ secrets.PINECONE_API_KEY }}" \
+              $REGISTRY/$REPO:latest
 
-          docker image prune -f
+            docker image prune -f

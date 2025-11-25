@@ -1,130 +1,77 @@
-# Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS
+# Medical Chatbot with LLMs, LangChain, Pinecone & Flask
 
-# How to run?
-### STEPS:
+A comprehensive medical AI assistant utilizing RAG (Retrieval Augmented Generation) with Pinecone vector database and OpenAI's GPT models.
 
-Clone the repository
+## Features
+- 💬 **Interactive Chat**: Real-time Q&A with context from medical documents
+- 🎤 **Voice Interaction**: Speech-to-Text and Text-to-Speech capabilities
+- 🧠 **RAG Architecture**: Accurate answers grounded in provided PDF data
+- 🚀 **Production Ready**: Includes caching, monitoring, and WSGI deployment setup
+
+## Quick Start
+
+### 1. Prerequisites
+- Python 3.10+
+- Pinecone Account & API Key
+- OpenAI Account & API Key
+
+### 2. Installation
 
 ```bash
-git clonehttps://github.com/entbappy/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS.git
-```
-### STEP 01- Create a conda environment after opening the repository
+# Clone repository
+git clone https://github.com/entbappy/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS.git
+cd Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS
 
-```bash
-conda create -n medibot python=3.10 -y
-```
+# Create virtual environment
+python -m venv venv
 
-```bash
-conda activate medibot
-```
+# Activate environment
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
 
-
-### STEP 02- install the requirements
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
-
+### 3. Configuration
+Create a `.env` file in the root directory:
 ```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+PINECONE_API_KEY=your_pinecone_key
+OPENAI_API_KEY=your_openai_key
+
+# Optional Monitoring
+# LANGCHAIN_TRACING=true
+# LANGSMITH_API_KEY=your_key
+# SENTRY_DSN=your_dsn
 ```
 
-
+### 4. Data Ingestion
+Index your PDF documents (place them in `data/` folder):
 ```bash
-# run the following command to store embeddings to pinecone
 python store_index.py
 ```
 
+### 5. Running the Application
+
+**Development:**
 ```bash
-# Finally run the following command
 python app.py
 ```
 
-Now,
+**Production:**
 ```bash
-open up localhost:
+# Uses Waitress (included in requirements)
+python wsgi.py
 ```
+Access at `http://localhost:8080`
 
+## Deployment
 
-### Techstack Used:
+### Docker
+1. Build image: `docker build -t medical-bot .`
+2. Run container: `docker run -p 8080:8080 --env-file .env medical-bot`
 
-- Python
-- LangChain
-- Flask
-- GPT
-- Pinecone
-
-
-
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
-
-	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-    - Save the URI: 315865595366.dkr.ecr.us-east-1.amazonaws.com/medicalbot
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-
-# 7. Setup github secrets:
-
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
-   - AWS_DEFAULT_REGION
-   - ECR_REPO
-   - PINECONE_API_KEY
-   - OPENAI_API_KEY
+### AWS / Cloud
+See `IMPLEMENTATION_SUMMARY.md` for detailed cloud architecture notes. The project is ready for AWS EC2/ECR deployment via GitHub Actions.

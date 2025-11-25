@@ -1,58 +1,22 @@
 from dotenv import load_dotenv
 import os
 from src.helpers import load_pdf_files, filter_to_minimal_docs, text_split, download_hugging_face_embeddings
-from pinecone import Pinecone
-from pinecone import ServerlessSpec
+from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 
-
-def create_vector_store():
-    load_dotenv()
-
-    PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
-    OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
-
-    if not PINECONE_API_KEY or not OPENAI_API_KEY:
-        raise EnvironmentError("PINECONE_API_KEY and OPENAI_API_KEY must be set in the environment variables")
-
-    os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
-    os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-
-    extracted_data = load_pdf_files(data='data/')
-    filter_data = filter_to_minimal_docs(extracted_data)
-    text_chunks = text_split(filter_data)
-
-    embeddings = download_hugging_face_embeddings()
-
-    pinecone_api_key = PINECONE_API_KEY
-    pc = Pinecone(api_key=pinecone_api_key)
-
-    index_name = "medical-chatbot"
-
-    if not pc.has_index(index_name):
-        pc.create_index(
-            name=index_name,
-            dimension=384,
-            metric="cosine",
-            spec=ServerlessSpec(cloud="aws", region="us-east-1"),
-        )
-
-    index = pc.Index(index_name)
-
-    docsearch = PineconeVectorStore.from_documents(
-        documents=text_chunks,
-        index_name=index_name,
-        embedding=embeddings,
-    )
-
-    return docsearch
-
-
 if __name__ == '__main__':
-    print("Starting vector store creation...")
-    print("Loading PDFs from data/ folder...")
+    load_dotenv()
+    if not (key := os.environ.get('PINECONE_API_KEY')): raise EnvironmentError("Missing PINECONE_API_KEY")
     
-    docsearch = create_vector_store()
+    pc = Pinecone(api_key=key)
+    index_name = "medical-chatbot"
     
-    print("✅ Vector store created successfully!")
-    print("All PDFs from data/ folder have been indexed.")
+    if not pc.has_index(index_name):
+        pc.create_index(index_name, dimension=384, metric="cosine", spec=ServerlessSpec("aws", "us-east-1"))
+        
+    PineconeVectorStore.from_documents(
+        documents=text_split(filter_to_minimal_docs(load_pdf_files('data/'))),
+        index_name=index_name,
+        embedding=download_hugging_face_embeddings()
+    )
+    print("Vector store created.")

@@ -1,0 +1,276 @@
+2025-11-25 23:29:03,942 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:29:12,034 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-25 23:29:12,034 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 23:29:12,035 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:29:19,205 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:29:25,978 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:29:25,985 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-25 23:29:26,064 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:29:26] "GET / HTTP/1.1" 200 -
+2025-11-25 23:29:26,211 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:29:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-25 23:29:26,229 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:29:26] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-25 23:29:26,233 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:29:26] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-25 23:29:44,824 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\app.py', reloading
+2025-11-25 23:29:48,201 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:29:59,622 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:30:56,198 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:31:04,301 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-25 23:31:04,301 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 23:31:04,314 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:31:46,930 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:31:53,641 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:31:53,651 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:40:07,566 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\helpers.py', reloading
+2025-11-25 23:40:08,424 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:41:31,933 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:41:40,028 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:41:40,028 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:41:41,078 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "GET / HTTP/1.1" 200 -
+2025-11-25 23:41:41,078 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "GET / HTTP/1.1" 200 -
+2025-11-25 23:41:41,311 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-25 23:41:41,311 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "GET /static/style.css HTTP/1.1" 200 -
+2025-11-25 23:41:41,326 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-25 23:41:41,329 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-25 23:41:41,348 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-25 23:41:41,348 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:41:41] "GET /static/assistant.js HTTP/1.1" 200 -
+2025-11-25 23:42:43,537 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\app.py', reloading
+2025-11-25 23:42:45,191 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:43:21,684 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:43:30,697 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:43:30,715 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:43:40,631 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:43:40,845 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:43:40] "POST /get HTTP/1.1" 200 -
+2025-11-25 23:43:41,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:43:41,016 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:43:41] "POST /get HTTP/1.1" 200 -
+2025-11-25 23:44:05,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:44:05,939 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:44:05] "POST /get HTTP/1.1" 200 -
+2025-11-25 23:44:36,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-25 23:44:41,247 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:44:42,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-25 23:44:44,483 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:44:44] "POST /voice-query HTTP/1.1" 200 -
+2025-11-25 23:44:44,578 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:44:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-25 23:45:08,791 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\voice_helpers.py', reloading
+2025-11-25 23:45:08,957 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:45:09,788 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:45:24,036 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-25 23:45:24,037 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 23:45:24,062 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:45:35,213 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:45:38,861 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:45:44,056 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:45:44,084 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-25 23:45:45,611 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:45:45,619 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:47:34,625 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:47:34] "GET / HTTP/1.1" 200 -
+2025-11-25 23:47:34,773 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:47:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-25 23:47:34,785 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:47:34] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-25 23:47:34,786 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:47:34] "GET /static/assistant.js HTTP/1.1" 200 -
+2025-11-25 23:47:52,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-25 23:47:57,213 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:47:58,378 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-25 23:48:00,877 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:48:00] "POST /voice-query HTTP/1.1" 200 -
+2025-11-25 23:48:00,920 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:48:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-25 23:48:51,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:48:51,445 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:48:51] "POST /get HTTP/1.1" 200 -
+2025-11-25 23:49:05,309 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-25 23:49:07,472 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-25 23:49:09,068 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-25 23:49:10,928 - werkzeug - INFO - 127.0.0.1 - - [25/Nov/2025 23:49:10] "POST /voice-query HTTP/1.1" 200 -
+2025-11-25 23:51:49,894 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:51:50,012 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:51:51,085 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:51:51,687 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:52:01,188 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-25 23:52:04,460 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:52:13,102 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:52:13,112 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-25 23:52:20,389 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-25 23:52:20,395 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:52:22,842 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:52:24,158 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:52:26,516 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:52:26,517 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:52:31,881 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-25 23:52:35,268 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:52:43,965 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:52:43,980 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-25 23:52:44,159 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:52:44,858 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:53:14,556 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-25 23:53:14,571 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:53:21,516 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:53:21,516 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:53:23,120 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:53:29,835 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-25 23:53:29,835 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 23:53:29,835 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:53:55,773 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-25 23:53:55,780 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:54:03,611 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:54:03,625 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:56:59,260 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:56:59,807 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\cache.py', reloading
+2025-11-25 23:56:59,924 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-25 23:57:01,386 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:57:02,133 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:57:02,210 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:57:10,763 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-25 23:57:14,057 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:57:23,405 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:57:23,422 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-25 23:57:35,988 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-25 23:57:35,997 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:57:40,869 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-25 23:57:41,063 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-25 23:57:41,063 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:57:42,550 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:57:42,550 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:57:44,350 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:57:47,757 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:57:47,763 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-25 23:57:52,193 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-25 23:57:52,194 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-25 23:57:52,201 - werkzeug - INFO -  * Restarting with stat
+2025-11-25 23:58:00,375 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-25 23:58:03,480 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-25 23:58:13,032 - werkzeug - WARNING -  * Debugger is active!
+2025-11-25 23:58:13,045 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:19:48,068 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\AppData\\Roaming\\Python\\Python311\\site-packages\\dotenv\\__main__.py', reloading
+2025-11-26 00:19:48,111 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\AppData\\Roaming\\Python\\Python311\\site-packages\\pypdf\\pagerange.py', reloading
+2025-11-26 00:19:49,231 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:19:49,292 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:20:23,971 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-26 00:20:23,979 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:20:29,816 - src.monitoring - WARNING - Sentry initialization failed: Missing public key
+2025-11-26 00:20:29,824 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:20:31,218 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:20:31,222 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-26 00:20:37,412 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:20:37,421 - werkzeug - INFO -  * Debugger PIN: 142-019-650
+2025-11-26 00:21:00,629 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\AppData\\Roaming\\Python\\Python311\\site-packages\\langchain_community\\document_loaders\\html.py', reloading
+2025-11-26 00:21:00,669 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\AppData\\Roaming\\Python\\Python311\\site-packages\\langchain_community\\chains\\openapi\\__init__.py', reloading
+2025-11-26 00:21:02,778 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:21:02,778 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:21:18,005 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:18] "GET / HTTP/1.1" 200 -
+2025-11-26 00:21:18,320 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:18] "GET /static/style.css HTTP/1.1" 200 -
+2025-11-26 00:21:18,329 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:18] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-26 00:21:18,329 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:18] "GET /static/assistant.js HTTP/1.1" 200 -
+2025-11-26 00:21:34,815 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:21:34,856 - src.monitoring - INFO - [METRICS] Endpoint: /get | Latency: 5.35s | Cache: MISS | Query: 'how you can help me' | Answer: 'I can provide general information about mental hea...'
+2025-11-26 00:21:34,856 - src.monitoring - INFO - [SUCCESS] chat completed in 5.35s
+2025-11-26 00:21:34,857 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:34] "POST /get HTTP/1.1" 200 -
+2025-11-26 00:21:57,338 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:21:57,343 - src.monitoring - INFO - [METRICS] Endpoint: /get | Latency: 2.63s | Cache: MISS | Query: 'coping strategy tell me about this' | Answer: 'Coping strategies are techniques that help individ...'
+2025-11-26 00:21:57,344 - src.monitoring - INFO - [SUCCESS] chat completed in 2.63s
+2025-11-26 00:21:57,344 - werkzeug - INFO - 127.0.0.1 - - [26/Nov/2025 00:21:57] "POST /get HTTP/1.1" 200 -
+2025-11-26 00:36:25,823 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:36:27,169 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:36:33,998 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-26 00:36:33,999 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 00:36:34,000 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:36:40,707 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:36:43,851 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:36:53,139 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:36:53,150 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:39:32,836 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\cache.py', reloading
+2025-11-26 00:39:34,821 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:39:44,179 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:39:48,428 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:39:58,408 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:39:58,426 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:40:04,996 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\cache.py', reloading
+2025-11-26 00:40:06,959 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:40:17,312 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:40:21,920 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:40:31,535 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:40:31,551 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:41:04,995 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\cache.py', reloading
+2025-11-26 00:41:06,457 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:41:13,820 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:41:17,149 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:41:26,293 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:41:26,306 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:42:12,006 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:42:13,274 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:42:19,845 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.177.109.232:8080
+2025-11-26 00:42:19,845 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 00:42:19,846 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:42:22,978 - src.monitoring - INFO - Sentry not installed. Error tracking disabled.
+2025-11-26 00:42:26,036 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:42:34,664 - werkzeug - WARNING -  * Debugger is active!
+2025-11-26 00:42:34,680 - werkzeug - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:43:42,907 - werkzeug - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\helpers.py', reloading
+2025-11-26 00:43:44,648 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:43:58,990 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:44:07,500 - WARNING -  * Debugger is active!
+2025-11-26 00:44:07,517 - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:44:11,415 - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\app.py', reloading
+2025-11-26 00:44:13,526 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:44:25,939 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:44:34,773 - WARNING -  * Debugger is active!
+2025-11-26 00:44:34,787 - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:44:45,007 - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\voice_helpers.py', reloading
+2025-11-26 00:44:46,451 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:44:57,108 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:45:05,672 - WARNING -  * Debugger is active!
+2025-11-26 00:45:05,680 - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:46:30,674 - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\store_index.py', reloading
+2025-11-26 00:46:32,104 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:46:43,045 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:46:51,708 - WARNING -  * Debugger is active!
+2025-11-26 00:46:51,721 - INFO -  * Debugger PIN: 115-621-896
+2025-11-26 00:47:04,801 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:04] "GET / HTTP/1.1" 200 -
+2025-11-26 00:47:05,043 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 00:47:05,055 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:05] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-26 00:47:05,072 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:05] "GET /static/assistant.js HTTP/1.1" 200 -
+2025-11-26 00:47:35,345 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:47:35,376 - INFO - [METRICS] /get | 4.67s | MISS
+2025-11-26 00:47:35,377 - INFO - [SUCCESS] chat in 4.67s
+2025-11-26 00:47:35,378 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:35] "POST /get HTTP/1.1" 200 -
+2025-11-26 00:47:49,120 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 00:47:51,381 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:47:51,385 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:4.86s
+2025-11-26 00:47:52,725 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 00:47:53,798 - INFO - [SUCCESS] voice_query in 7.27s
+2025-11-26 00:47:53,799 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:53] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 00:47:53,863 - INFO - 127.0.0.1 - - [26/Nov/2025 00:47:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-26 00:48:03,912 - INFO - 127.0.0.1 - - [26/Nov/2025 00:48:03] "GET /stats HTTP/1.1" 200 -
+2025-11-26 00:48:10,260 - INFO - 127.0.0.1 - - [26/Nov/2025 00:48:10] "GET / HTTP/1.1" 200 -
+2025-11-26 00:48:13,602 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 00:48:15,366 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:48:15,370 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:2.96s
+2025-11-26 00:48:16,899 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 00:48:18,090 - INFO - [SUCCESS] voice_query in 5.68s
+2025-11-26 00:48:18,091 - INFO - 127.0.0.1 - - [26/Nov/2025 00:48:18] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 00:51:23,532 - INFO -  * Detected change in 'C:\\Users\\GyanendraKumar\\Desktop\\chatbot-using-llm-langchain-flask\\src\\monitoring.py', reloading
+2025-11-26 00:51:25,317 - werkzeug - INFO -  * Restarting with stat
+2025-11-26 00:53:23,328 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 00:53:40,134 - INFO - 127.0.0.1 - - [26/Nov/2025 00:53:40] "GET /stats HTTP/1.1" 200 -
+2025-11-26 00:58:05,263 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:05] "GET / HTTP/1.1" 200 -
+2025-11-26 00:58:05,648 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:05] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 00:58:05,693 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 00:58:05,710 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:05] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 00:58:14,141 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 00:58:14,156 - INFO - [METRICS] /get | 3.51s | MISS
+2025-11-26 00:58:14,157 - INFO - [SUCCESS] chat in 3.51s
+2025-11-26 00:58:14,158 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:14] "POST /get HTTP/1.1" 200 -

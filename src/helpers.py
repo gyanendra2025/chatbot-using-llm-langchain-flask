@@ -1,51 +1,25 @@
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from typing import List
-from langchain.schema import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.documents import Document
 
-# Extract text from PDF files
 def load_pdf_files(data):
-    loader = DirectoryLoader(
-        data,
-        glob="*.pdf",
-        loader_cls=PyPDFLoader
-    )
+    return DirectoryLoader(data, glob="*.pdf", loader_cls=PyPDFLoader).load()
 
-    documents = loader.load()
-    return documents
+def filter_to_minimal_docs(docs):
+    return [Document(page_content=doc.page_content, metadata={"source": doc.metadata.get("source")}) for doc in docs]
 
-
-def filter_to_minimal_docs(docs: List[Document]) -> List[Document]:
-    """
-    Given a list of Document objects, return a new list of Document objects
-    containing only 'source' in metadata and the original page_content.
-    """
-    minimal_docs: List[Document] = []
-    for doc in docs:
-        src = doc.metadata.get("source")
-        minimal_docs.append(
-            Document(
-                page_content=doc.page_content,
-                metadata={"source": src}
-            )
-        )
-    return minimal_docs
-
-
-# Split the documents into smaller chunks
 def text_split(minimal_docs):
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=20,
-    )
-    texts_chunk = text_splitter.split_documents(minimal_docs)
-    return texts_chunk
-
-
+    return RecursiveCharacterTextSplitter(
+        chunk_size=700,
+        chunk_overlap=150,
+        separators=["\n\n", "\n", ". ", " ", ""],
+        length_function=len
+    ).split_documents(minimal_docs)
 
 def download_hugging_face_embeddings():
-    model_name = "sentence-transformers/all-MiniLM-L6-v2"
-    embeddings = HuggingFaceEmbeddings(model_name=model_name)
-    return embeddings
-
+    return HuggingFaceEmbeddings(
+        model_name="BAAI/bge-small-en-v1.5",
+        model_kwargs={'device': 'cpu'},
+        encode_kwargs={'normalize_embeddings': True}
+    )

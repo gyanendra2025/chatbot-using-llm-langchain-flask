@@ -46,3 +46,13 @@ def create_vector_store():
     )
 
     return docsearch
+
+
+if __name__ == '__main__':
+    print("Starting vector store creation...")
+    print("Loading PDFs from data/ folder...")
+    
+    docsearch = create_vector_store()
+    
+    print("✅ Vector store created successfully!")
+    print("All PDFs from data/ folder have been indexed.")

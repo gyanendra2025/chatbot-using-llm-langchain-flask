@@ -49,4 +49,3 @@ def download_hugging_face_embeddings():
     embeddings = HuggingFaceEmbeddings(model_name=model_name)
     return embeddings
 
-embedding = download_hugging_face_embeddings()

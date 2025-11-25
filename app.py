@@ -101,6 +101,11 @@ def voice_query():
         return jsonify({"error": str(e)}), 500
     finally: cleanup_temp_file(temp)
 
+    
 if __name__ == '__main__':
     # Development mode
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)), debug=os.environ.get("DEBUG", "False").lower() == "true")
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8080)),
+        debug=os.environ.get("DEBUG", "False").lower() == "true"
+    )

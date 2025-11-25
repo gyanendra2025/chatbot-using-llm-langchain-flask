@@ -75,3 +75,7 @@ Access at `http://localhost:8080`
 
 ### AWS / Cloud
 See `IMPLEMENTATION_SUMMARY.md` for detailed cloud architecture notes. The project is ready for AWS EC2/ECR deployment via GitHub Actions.
+
+
+
+URI: 845087561044.dkr.ecr.eu-north-1.amazonaws.com/medical-bot

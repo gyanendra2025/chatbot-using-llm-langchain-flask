@@ -8,7 +8,6 @@ from langchain_core.runnables import RunnablePassthrough
 from dotenv import load_dotenv
 from src.prompts import system_prompt
 from src.voice_helpers import transcribe_audio, generate_speech, save_temp_audio, cleanup_temp_file
-from src.cache import get_cached_answer, cache_answer, get_cache_stats
 from src.monitoring import log_query, log_metrics, log_voice_metrics, log_error
 import os, base64, time
 
@@ -33,12 +32,9 @@ chain = (
 @app.route("/")
 def index(): return render_template("index.html")
 
-@app.route("/chat")
-def chat_page(): return render_template("chat.html")
-
 @app.route("/stats")
 def stats():
-    return jsonify({"cache": get_cache_stats(), "model": "gpt-4o-mini"})
+    return jsonify({"model": "gpt-4o-mini"})
 
 @app.route("/get", methods=["GET", "POST"])
 @log_query
@@ -48,14 +44,9 @@ def chat():
     if not msg: return jsonify({"error": "No input"}), 400
 
     try:
-        if cached := get_cached_answer(msg):
-            log_metrics("/get", msg, cached, time.time() - start, True)
-            return jsonify({"answer": cached, "cached": True})
-        
         answer = chain.invoke(msg)
-        cache_answer(msg, answer)
-        log_metrics("/get", msg, answer, time.time() - start, False)
-        return jsonify({"answer": answer, "cached": False})
+        log_metrics("/get", msg, answer, time.time() - start)
+        return jsonify({"answer": answer})
     except Exception as e:
         log_error("/get", str(e))
         return jsonify({"error": str(e)}), 500
@@ -85,11 +76,7 @@ def voice_query():
     try:
         if not (trans := transcribe_audio(temp)): return jsonify({"error": "Transcribe failed"}), 400
         
-        if cached := get_cached_answer(trans):
-            answer = cached
-        else:
-            answer = chain.invoke(trans)
-            cache_answer(trans, answer)
+        answer = chain.invoke(trans)
         
         log_voice_metrics("/voice-query", 0, trans, answer, time.time() - start)
         return jsonify({

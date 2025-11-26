@@ -34,8 +34,8 @@ def log_query(func):
             raise
     return wrapper
 
-def log_metrics(endpoint, query, answer, latency, cached=False):
-    logger.info(f"[METRICS] {endpoint} | {latency:.2f}s | {'HIT' if cached else 'MISS'}")
+def log_metrics(endpoint, query, answer, latency):
+    logger.info(f"[METRICS] {endpoint} | {latency:.2f}s")
 
 def log_voice_metrics(endpoint, duration, trans, answer, latency):
     logger.info(f"[VOICE] {endpoint} | Aud:{duration:.1f}s | Lat:{latency:.2f}s")

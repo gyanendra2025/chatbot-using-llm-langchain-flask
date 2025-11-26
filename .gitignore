@@ -11,9 +11,13 @@ instance/
 .vscode/
 history/
 *.code-workspace 
+
 # Python virtual environment
 venv/
 env/
 ENV/.env
 
 README.md
+
+app.log
+

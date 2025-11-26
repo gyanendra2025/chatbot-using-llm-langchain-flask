@@ -3,10 +3,10 @@
 A comprehensive medical AI assistant utilizing RAG (Retrieval Augmented Generation) with Pinecone vector database and OpenAI's GPT models.
 
 ## Features
-- 💬 **Interactive Chat**: Real-time Q&A with context from medical documents
-- 🎤 **Voice Interaction**: Speech-to-Text and Text-to-Speech capabilities
-- 🧠 **RAG Architecture**: Accurate answers grounded in provided PDF data
-- 🚀 **Production Ready**: Includes caching, monitoring, and WSGI deployment setup
+-  **Interactive Chat**: Real-time Q&A with context from medical documents
+-  **Voice Interaction**: Speech-to-Text and Text-to-Speech capabilities
+-  **RAG Architecture**: Accurate answers grounded in provided PDF data
+-  **Production Ready**: Includes caching, monitoring, and WSGI deployment setup
 
 ## Quick Start
 
@@ -14,14 +14,7 @@ A comprehensive medical AI assistant utilizing RAG (Retrieval Augmented Generati
 - Python 3.10+
 - Pinecone Account & API Key
 - OpenAI Account & API Key
-
-### 2. Installation
-
-```bash
-# Clone repository
-git clone https://github.com/entbappy/Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS.git
-cd Build-a-Complete-Medical-Chatbot-with-LLMs-LangChain-Pinecone-Flask-AWS
-
+ 
 # Create virtual environment
 python -m venv venv
 
@@ -77,6 +70,6 @@ Access at `http://localhost:8080`
 See `IMPLEMENTATION_SUMMARY.md` for detailed cloud architecture notes. The project is ready for AWS EC2/ECR deployment via GitHub Actions.
 
 
-
+<!-- aws repo uri -->
 URI: 845087561044.dkr.ecr.eu-north-1.amazonaws.com/medical-bot
 845087561044.dkr.ecr.us-east-1.amazonaws.com/medical-chatbot

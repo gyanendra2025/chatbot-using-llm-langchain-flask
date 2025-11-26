@@ -274,3 +274,129 @@
 2025-11-26 00:58:14,156 - INFO - [METRICS] /get | 3.51s | MISS
 2025-11-26 00:58:14,157 - INFO - [SUCCESS] chat in 3.51s
 2025-11-26 00:58:14,158 - INFO - 127.0.0.1 - - [26/Nov/2025 00:58:14] "POST /get HTTP/1.1" 200 -
+2025-11-26 02:44:30,127 - INFO - 127.0.0.1 - - [26/Nov/2025 02:44:30] "GET / HTTP/1.1" 200 -
+2025-11-26 02:44:30,205 - INFO - 127.0.0.1 - - [26/Nov/2025 02:44:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 02:44:30,208 - INFO - 127.0.0.1 - - [26/Nov/2025 02:44:30] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 02:44:30,212 - INFO - 127.0.0.1 - - [26/Nov/2025 02:44:30] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 02:44:44,113 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 02:44:44,121 - INFO - [METRICS] /get | 5.66s | MISS
+2025-11-26 02:44:44,122 - INFO - [SUCCESS] chat in 5.66s
+2025-11-26 02:44:44,123 - INFO - 127.0.0.1 - - [26/Nov/2025 02:44:44] "POST /get HTTP/1.1" 200 -
+2025-11-26 11:58:59,400 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 11:59:13,027 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.68.72:8080
+2025-11-26 11:59:13,028 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 12:11:22,707 - INFO - 127.0.0.1 - - [26/Nov/2025 12:11:22] "GET / HTTP/1.1" 200 -
+2025-11-26 12:11:23,110 - INFO - 127.0.0.1 - - [26/Nov/2025 12:11:23] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:11:23,144 - INFO - 127.0.0.1 - - [26/Nov/2025 12:11:23] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:11:23,171 - INFO - 127.0.0.1 - - [26/Nov/2025 12:11:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 12:14:56,481 - INFO - 127.0.0.1 - - [26/Nov/2025 12:14:56] "GET / HTTP/1.1" 200 -
+2025-11-26 12:14:56,534 - INFO - 127.0.0.1 - - [26/Nov/2025 12:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 12:14:56,540 - INFO - 127.0.0.1 - - [26/Nov/2025 12:14:56] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:14:56,582 - INFO - 127.0.0.1 - - [26/Nov/2025 12:14:56] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:15:17,601 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:15:17,627 - INFO - [METRICS] /get | 4.37s | MISS
+2025-11-26 12:15:17,629 - INFO - [SUCCESS] chat in 4.37s
+2025-11-26 12:15:17,631 - INFO - 127.0.0.1 - - [26/Nov/2025 12:15:17] "POST /get HTTP/1.1" 200 -
+2025-11-26 12:15:44,630 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:15:48,113 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:15:48,118 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:6.66s
+2025-11-26 12:15:50,475 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:15:52,401 - INFO - [SUCCESS] voice_query in 10.94s
+2025-11-26 12:15:52,406 - INFO - 127.0.0.1 - - [26/Nov/2025 12:15:52] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 12:15:52,558 - INFO - 127.0.0.1 - - [26/Nov/2025 12:15:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-26 12:16:14,307 - INFO - 127.0.0.1 - - [26/Nov/2025 12:16:14] "GET / HTTP/1.1" 200 -
+2025-11-26 12:16:14,370 - INFO - 127.0.0.1 - - [26/Nov/2025 12:16:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 12:16:14,374 - INFO - 127.0.0.1 - - [26/Nov/2025 12:16:14] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:16:14,379 - INFO - 127.0.0.1 - - [26/Nov/2025 12:16:14] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:17:36,197 - INFO - 127.0.0.1 - - [26/Nov/2025 12:17:36] "GET / HTTP/1.1" 200 -
+2025-11-26 12:17:36,285 - INFO - 127.0.0.1 - - [26/Nov/2025 12:17:36] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-26 12:17:36,287 - INFO - 127.0.0.1 - - [26/Nov/2025 12:17:36] "GET /static/style.css HTTP/1.1" 200 -
+2025-11-26 12:17:36,292 - INFO - 127.0.0.1 - - [26/Nov/2025 12:17:36] "GET /static/assistant.js HTTP/1.1" 200 -
+2025-11-26 12:17:36,762 - INFO - 127.0.0.1 - - [26/Nov/2025 12:17:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-26 12:19:34,419 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:34] "[33mGET /index.html HTTP/1.1[0m" 404 -
+2025-11-26 12:19:38,012 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:38] "GET / HTTP/1.1" 200 -
+2025-11-26 12:19:38,055 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 12:19:38,071 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:38] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:19:38,076 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:38] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:19:59,325 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:59] "GET /chat HTTP/1.1" 200 -
+2025-11-26 12:19:59,406 - INFO - 127.0.0.1 - - [26/Nov/2025 12:19:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-26 12:20:27,391 - INFO - 127.0.0.1 - - [26/Nov/2025 12:20:27] "GET /stats HTTP/1.1" 200 -
+2025-11-26 12:20:56,023 - INFO - [SUCCESS] chat in 0.00s
+2025-11-26 12:20:56,025 - INFO - 127.0.0.1 - - [26/Nov/2025 12:20:56] "[31m[1mGET /get HTTP/1.1[0m" 400 -
+2025-11-26 12:20:57,831 - INFO - [SUCCESS] chat in 0.00s
+2025-11-26 12:20:57,832 - INFO - 127.0.0.1 - - [26/Nov/2025 12:20:57] "[31m[1mGET /get HTTP/1.1[0m" 400 -
+2025-11-26 12:35:48,494 - INFO - 127.0.0.1 - - [26/Nov/2025 12:35:48] "GET / HTTP/1.1" 200 -
+2025-11-26 12:35:50,519 - INFO - 127.0.0.1 - - [26/Nov/2025 12:35:50] "GET / HTTP/1.1" 200 -
+2025-11-26 12:35:52,584 - INFO - 127.0.0.1 - - [26/Nov/2025 12:35:52] "GET /stats HTTP/1.1" 200 -
+2025-11-26 12:35:59,021 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:35:59,029 - INFO - [METRICS] /get | 4.39s | MISS
+2025-11-26 12:35:59,030 - INFO - [SUCCESS] chat in 4.39s
+2025-11-26 12:35:59,032 - INFO - 127.0.0.1 - - [26/Nov/2025 12:35:59] "POST /get HTTP/1.1" 200 -
+2025-11-26 12:36:03,094 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:36:03,344 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:03] "POST /text-to-speech HTTP/1.1" 200 -
+2025-11-26 12:36:07,942 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:36:07,945 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:07] "POST /transcribe HTTP/1.1" 200 -
+2025-11-26 12:36:12,515 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:36:15,070 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:36:15,073 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:5.08s
+2025-11-26 12:36:16,401 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:36:17,558 - INFO - [SUCCESS] voice_query in 7.56s
+2025-11-26 12:36:17,559 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:17] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 12:36:41,908 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:41] "GET / HTTP/1.1" 200 -
+2025-11-26 12:36:43,945 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:43] "GET / HTTP/1.1" 200 -
+2025-11-26 12:36:45,972 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:45] "GET /stats HTTP/1.1" 200 -
+2025-11-26 12:36:50,298 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:36:50,301 - INFO - [METRICS] /get | 2.27s | MISS
+2025-11-26 12:36:50,302 - INFO - [SUCCESS] chat in 2.27s
+2025-11-26 12:36:50,303 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:50] "POST /get HTTP/1.1" 200 -
+2025-11-26 12:36:53,370 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:36:53,615 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:53] "POST /text-to-speech HTTP/1.1" 200 -
+2025-11-26 12:36:56,632 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:36:56,635 - INFO - 127.0.0.1 - - [26/Nov/2025 12:36:56] "POST /transcribe HTTP/1.1" 200 -
+2025-11-26 12:36:59,424 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:37:01,659 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:37:01,664 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:2.96s
+2025-11-26 12:37:03,084 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:37:04,655 - INFO - [SUCCESS] voice_query in 5.95s
+2025-11-26 12:37:04,657 - INFO - 127.0.0.1 - - [26/Nov/2025 12:37:04] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 12:38:42,516 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-11-26 12:38:50,848 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.68.72:8080
+2025-11-26 12:38:50,848 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-26 12:38:51,346 - INFO - 127.0.0.1 - - [26/Nov/2025 12:38:51] "GET / HTTP/1.1" 200 -
+2025-11-26 12:38:53,390 - INFO - 127.0.0.1 - - [26/Nov/2025 12:38:53] "GET / HTTP/1.1" 200 -
+2025-11-26 12:38:55,419 - INFO - 127.0.0.1 - - [26/Nov/2025 12:38:55] "GET /stats HTTP/1.1" 200 -
+2025-11-26 12:39:00,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:39:00,822 - INFO - [METRICS] /get | 3.35s
+2025-11-26 12:39:00,824 - INFO - [SUCCESS] chat in 3.35s
+2025-11-26 12:39:00,824 - INFO - 127.0.0.1 - - [26/Nov/2025 12:39:00] "POST /get HTTP/1.1" 200 -
+2025-11-26 12:39:04,171 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:39:04,408 - INFO - 127.0.0.1 - - [26/Nov/2025 12:39:04] "POST /text-to-speech HTTP/1.1" 200 -
+2025-11-26 12:39:07,639 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:39:07,645 - INFO - 127.0.0.1 - - [26/Nov/2025 12:39:07] "POST /transcribe HTTP/1.1" 200 -
+2025-11-26 12:39:11,501 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-11-26 12:39:14,477 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:39:14,483 - INFO - [VOICE] /voice-query | Aud:0.0s | Lat:4.80s
+2025-11-26 12:39:16,170 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2025-11-26 12:39:17,913 - INFO - [SUCCESS] voice_query in 8.23s
+2025-11-26 12:39:17,913 - INFO - 127.0.0.1 - - [26/Nov/2025 12:39:17] "POST /voice-query HTTP/1.1" 200 -
+2025-11-26 12:43:22,051 - INFO - [SUCCESS] chat in 0.00s
+2025-11-26 12:43:22,051 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:22] "[31m[1mGET /get HTTP/1.1[0m" 400 -
+2025-11-26 12:43:23,945 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:23] "GET / HTTP/1.1" 200 -
+2025-11-26 12:43:23,990 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:23] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:43:23,991 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:23] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:43:28,786 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:28] "GET / HTTP/1.1" 200 -
+2025-11-26 12:43:28,812 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:28] "[36mGET /static/assistant.css HTTP/1.1[0m" 304 -
+2025-11-26 12:43:28,830 - INFO - 127.0.0.1 - - [26/Nov/2025 12:43:28] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:47:19,614 - INFO - 127.0.0.1 - - [26/Nov/2025 12:47:19] "GET / HTTP/1.1" 200 -
+2025-11-26 12:47:19,647 - INFO - 127.0.0.1 - - [26/Nov/2025 12:47:19] "GET /static/assistant.css HTTP/1.1" 200 -
+2025-11-26 12:47:19,654 - INFO - 127.0.0.1 - - [26/Nov/2025 12:47:19] "[36mGET /static/assistant.js HTTP/1.1[0m" 304 -
+2025-11-26 12:47:31,592 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-26 12:47:31,602 - INFO - [METRICS] /get | 3.00s
+2025-11-26 12:47:31,605 - INFO - [SUCCESS] chat in 3.00s
+2025-11-26 12:47:31,605 - INFO - 127.0.0.1 - - [26/Nov/2025 12:47:31] "POST /get HTTP/1.1" 200 -

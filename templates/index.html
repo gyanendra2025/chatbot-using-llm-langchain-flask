@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Medical AI Assistant</title>
     <meta charset="UTF-8">
@@ -12,100 +12,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    
-    <style>
-        .hero-section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: white;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 3rem;
-            max-width: 600px;
-        }
-        
-        .ask-magic-btn {
-            font-size: 1.5rem;
-            padding: 20px 50px;
-            border-radius: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .ask-magic-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-        
-        .features {
-            margin-top: 4rem;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .feature-card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 2rem;
-            width: 250px;
-            color: white;
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assistant.css') }}">
 </head>
 <body>
     <div class="hero-section">
         <h1 class="hero-title">Medical AI Assistant</h1>
         <p class="hero-subtitle">
-            Get instant answers to your medical questions. Ask about symptoms, medications, diseases, and more.
+            Your intelligent health companion. Get instant answers to your medical questions, understand symptoms, and explore treatments with AI-powered precision.
         </p>
         <button id="askMagicBtn" class="ask-magic-btn">
-            Ask Magic ✨
+            <i class="fas fa-sparkles"></i> Start Consultation
         </button>
         
         <div class="features">
             <div class="feature-card">
-                <div class="feature-icon">💬</div>
-                <h5>Text Chat</h5>
-                <p>Type your questions and get instant medical information</p>
+                <div class="feature-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h5>Smart Chat</h5>
+                <p>Natural conversations about your health concerns with immediate responses.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎤</div>
-                <h5>Voice Input</h5>
-                <p>Speak your questions naturally for hands-free interaction</p>
+                <div class="feature-icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h5>Voice Interaction</h5>
+                <p>Speak naturally to describe symptoms without typing a single word.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h5>AI Powered</h5>
-                <p>Advanced RAG system with medical knowledge base</p>
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h5>Medical Knowledge</h5>
+                <p>Powered by advanced AI trained on extensive medical literature.</p>
             </div>
         </div>
     </div>
@@ -118,46 +57,38 @@
             <div class="modal-header">
                 <h2>AI Assistant</h2>
                 <p class="subtitle">Ask anything about your symptoms, dosage, disease...</p>
-                <button class="close-btn">&times;</button>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
             </div>
             
             <!-- Chat Container -->
             <div id="chatWindow" class="chat-window">
                 <div class="empty-state">
-                    <p>👋 Hi! How can I help you today?</p>
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👋</div>
+                    <p>Hi! I'm your medical assistant.<br>How can I help you today?</p>
                 </div>
             </div>
             
             <!-- Footer Controls -->
             <div class="modal-footer">
                 <div class="input-group">
-                    <input type="text" id="chatInput" placeholder="Type your message..." />
-                    <button id="sendBtn" class="send-btn">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                    <button id="micBtn" class="mic-btn">
+                    <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" />
+                    <button id="micBtn" class="mic-btn" title="Speak">
                         <i class="fas fa-microphone"></i>
                         <span class="recording-timer hidden">0:00</span>
                     </button>
-                </div>
-                <div id="waveform" class="waveform hidden">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                    <button id="sendBtn" class="send-btn" title="Send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </div>
                 <div id="voiceStatus" class="voice-status hidden">
                     <span class="spinner"></span>
-                    <span class="voice-status-text">Sending voice...</span>
+                    <span class="voice-status-text">Processing...</span>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- Include Modal CSS and JS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='assistant.css') }}">
+    <!-- Scripts -->
     <script src="{{ url_for('static', filename='assistant.js') }}" defer></script>
 </body>
 </html>
-
